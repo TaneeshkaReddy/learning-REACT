@@ -6,6 +6,28 @@ import ListPicker from "./ListPicker";
 import DoubleDice from "./DoubleDice";
 import Heading from "./Heading";
 import ColorList from './ColorList';
+import ShoppingCart from './ShoppingCart';
+import Clicker from './Clicker';
+import Form from './Form';
+
+// const itemss=[
+//   {item:"Milk",quantity:2,added:false},
+//   {item:"Curd",quantity:3,added:true},
+//   {item:"Active Dry Yeast",quantity:1,added:false},
+//   {item:"Cocoa Powder",quantity:2,added:false},
+// ];
+
+//adding id for key
+const itemss=[
+  {id:1,item:"Milk",quantity:2,added:false},
+  {id:1,item:"Curd",quantity:3,added:true},
+  {id:1,item:"Active Dry Yeast",quantity:1,added:false},
+  {id:1,item:"Cocoa Powder",quantity:2,added:false},
+];
+
+
+
+
 
 function App() {
   return <div>
@@ -39,7 +61,20 @@ function App() {
    <h1>COLORLIST COMPONENT</h1>
    <ColorList colours={["red","pink","teal"]}></ColorList>
    <ColorList colours={["purple","orange","violet"]}></ColorList>
+   <hr></hr>
 
+   <h1>SHOPPING CART COMPONENT</h1>
+   <ShoppingCart items={itemss}></ShoppingCart>\
+   <hr />
+
+
+   <h1>CLICKER (EVENT) COMPONENT</h1>
+   <Clicker message="HII" buttonText="dont click"></Clicker>
+   <hr />
+
+   <h1>VERY BASIC FORM COMPONENT- JUST FOR SUBMISSION</h1>
+   <Form></Form>
+   <hr />
     
 
      
