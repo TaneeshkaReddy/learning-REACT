@@ -9,6 +9,9 @@ import ColorList from './ColorList';
 import ShoppingCart from './ShoppingCart';
 import Clicker from './Clicker';
 import Form from './Form';
+import Counter from "./Counter";
+import Toggle from "./Toggle";
+import ToggleCounter from "./ToggleCounter";
 
 // const itemss=[
 //   {item:"Milk",quantity:2,added:false},
@@ -36,7 +39,7 @@ function App() {
     <hr></hr>
 
     <h1>GREETER COMPONENT</h1>
-    <Greeter person="TanTanaTan" from="Ed Sheeran"></Greeter>
+    <Greeter person="Tan" from="Ed Sheeran"></Greeter>
     <hr></hr>
 
 
@@ -64,7 +67,7 @@ function App() {
    <hr></hr>
 
    <h1>SHOPPING CART COMPONENT</h1>
-   <ShoppingCart items={itemss}></ShoppingCart>\
+   <ShoppingCart items={itemss}></ShoppingCart>
    <hr />
 
 
@@ -75,10 +78,22 @@ function App() {
    <h1>VERY BASIC FORM COMPONENT- JUST FOR SUBMISSION</h1>
    <Form></Form>
    <hr />
+
+   <h1>COUNTER COMPONENT (INTRO TO REACT STATES) </h1>
+   <Counter></Counter>
+   <hr />
+   
+   <h1>TOGGLE COMPONENT (INTRO TO REACT STATES) </h1>
+   <Toggle></Toggle>
+   <hr />
+
+   <h1>TOGGLECounter COMPONENT (INTRO TO REACT STATES) </h1>
+   <ToggleCounter></ToggleCounter>
+   <hr />
     
 
      
   </div>
 }
 
-export default App
+export default App;

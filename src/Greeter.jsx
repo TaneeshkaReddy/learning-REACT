@@ -5,7 +5,7 @@ export default function Greeter({person="everyone",from="secret admirer"}){
   // return <h1>Hi!! {props.person} I am a greeter</h1>
   return <div>
     
-  <h2>Hi!! {person},How are you my love</h2>
+  <h2>Hi!! {person},How are you</h2>
   <h3>-{from}</h3>
   </div>
 }
